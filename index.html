@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy</title>
+    <!-- google Font URL -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind & DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Style -->
+    <style>
+      .lato {
+        font-family: "Lato", sans-serif;
+      }
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+      .primary-txt {
+        color: #131313;
+      }
+      .secondary-txt {
+        color: rgba(19, 19, 19, 0.7);
+      }
+      .footer-txt {
+        color: rgba(255, 255, 255, 0.9);
+      }
+    </style>
+  </head>
+  <body class="lato">
+    <!-- start header section -->
+    <header class="container mx-auto">
+      <!-- navbar -->
+      <nav>
+        <div class="navbar bg-base-100 bg-transparent">
+          <!-- nav start -->
+          <div class="navbar-start">
+            <svg
+              class="w-8 md:w-10"
+              xmlns="http://www.w3.org/2000/svg"
+              width="29"
+              height="24"
+              viewBox="0 0 29 24"
+              fill="none"
+            >
+              <path
+                d="M14.4772 24C12.3632 24 10.2513 23.4925 8.15337 22.4775H8.15137C7.13836 21.988 6.485 20.937 6.485 19.8041C6.485 15.5083 10.0695 12.0117 14.4772 12.0117C18.8848 12.0117 22.4693 15.5083 22.4693 19.8041C22.4693 20.937 21.816 21.988 20.803 22.4775C18.703 23.4945 16.5911 24 14.4772 24Z"
+                fill="#0E7A81"
+              />
+              <path
+                d="M7.41809 6.08556C6.91658 3.66194 7.47004 0.840702 9.49805 0.135393C11.0425 -0.406076 13.3083 0.622916 14.0456 4.19541C14.5471 6.61904 13.9936 9.44027 11.9656 10.1436C10.4072 10.687 8.15337 9.64207 7.41809 6.08556Z"
+                fill="#0E7A81"
+              />
+              <path
+                d="M17.1465 10.1436C15.1185 9.44027 14.5651 6.61904 15.0666 4.19541C15.8019 0.6369 18.0577 -0.408076 19.6141 0.135391C21.6421 0.838702 22.1956 3.66193 21.6941 6.08556C20.9588 9.64207 18.705 10.687 17.1465 10.1436Z"
+                fill="#0E7A81"
+              />
+              <path
+                d="M0.74263 11.6341C-0.392258 9.75996 -0.298351 7.2684 1.52586 6.26339C3.16226 5.36627 5.39807 6.23941 6.62087 8.25743C7.75575 10.1296 7.66185 12.6232 5.83763 13.6282C4.08136 14.5912 1.85954 13.4743 0.74263 11.6341Z"
+                fill="#0E7A81"
+              />
+              <path
+                d="M23.1167 13.6262C21.2925 12.6212 21.1986 10.1296 22.3335 8.25543C23.5563 6.23941 25.7901 5.36227 27.4285 6.26139C29.2527 7.2664 29.3466 9.75796 28.2117 11.6321C27.0948 13.4743 24.873 14.5912 23.1167 13.6262Z"
+                fill="#0E7A81"
+              />
+            </svg>
+            <span class="primary-txt text-xl md:text-2xl lg:text-3xl font-bold"
+              >Peddy</span
+            >
+          </div>
+          <!-- nav center -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="primary-txt text-lg font-medium">Home</a></li>
+              <li><a class="primary-txt text-lg font-medium">Shop</a></li>
+              <li><a class="primary-txt text-lg font-medium">Contact</a></li>
+            </ul>
+          </div>
+          <!-- nav end -->
+          <div class="navbar-end flex gap-3 lg:ml-20">
+            <div
+              class="border border-gray-400 rounded-full flex items-center justify-center h-8 w-8"
+            >
+              <svg
+                class="h-5 w-5"
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="User">
+                  <g>
+                    <path
+                      d="M17.438,21.937H6.562a2.5,2.5,0,0,1-2.5-2.5V18.61c0-3.969,3.561-7.2,7.938-7.2s7.938,3.229,7.938,7.2v.827A2.5,2.5,0,0,1,17.438,21.937ZM12,12.412c-3.826,0-6.938,2.78-6.938,6.2v.827a1.5,1.5,0,0,0,1.5,1.5H17.438a1.5,1.5,0,0,0,1.5-1.5V18.61C18.938,15.192,15.826,12.412,12,12.412Z"
+                    ></path>
+                    <path
+                      d="M12,9.911a3.924,3.924,0,1,1,3.923-3.924A3.927,3.927,0,0,1,12,9.911Zm0-6.847a2.924,2.924,0,1,0,2.923,2.923A2.926,2.926,0,0,0,12,3.064Z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <!-- dropdown -->
+            <div class="dropdown lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn-ghost text-right h-9 w-9 rounded-full bg-white flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-bars text-2xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 min-w-[70vw] h-[60vh] p-2 shadow-md flex items-center justify-center text-center right-0"
+              >
+                <li><a class="primary-txt text-lg font-medium">Home</a></li>
+                <li><a class="primary-txt text-lg font-medium">Shop</a></li>
+                <li><a class="primary-txt text-lg font-medium">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- start banner section -->
+      <section class="mt-5">
+        <p class="text-center font-bold text-xl">
+          <span class="secondary-txt"> Bringing Families Together</span> ❤️‍🔥
+        </p>
+        <h2
+          class="text-center font-black text-5xl primary-txt mt-1 leading-tight"
+        >
+          Your Path to Adoption <br />Starts Here
+        </h2>
+        <p class="text-center px-3 lg:px-[20%] primary-txt mt-4">
+          It’s well known that when viewing a page, a reader tends to get
+          distracted by its readable content rather than focusing on the layout.
+          The text can divert attention, making it harder to appreciate the
+          design or structure.
+        </p>
+        <div class="flex justify-center mt-7">
+          <a href="#scroll-adopt">
+            <button class="btn btn-success text-xl text-white bg-[#0E7A81]">
+              View More
+            </button></a
+          >
+        </div>
+        <div class="flex justify-center mt-5">
+          <img src="./assets/images/pet.webp" alt="pet" />
+        </div>
+      </section>
+      <!-- end banner section -->
+    </header>
+    <!-- end header section -->
+    <!-- start main section -->
+    <main id="scroll-adopt" class="container mx-auto">
+      <h2 class="primary-txt text-center font-black text-4xl">
+        Adopt Your Best Friend
+      </h2>
+      <p class="text-center px-3 lg:px-[20%] primary-txt mt-4">
+        It’s well known that when viewing a page, a reader tends to get
+        distracted by its readable content rather than focusing on the layout.
+        The text can divert attention, making it harder to appreciate the design
+        or structure.
+      </p>
+      <!-- button container -->
+      <div
+        id="btn-container"
+        class="mt-10 mx-2 grid grid-cols-2 lg:grid-cols-4 gap-10"
+      ></div>
+
+      <!-- start hero section -->
+      <section id="main-container" class="mt-7">
+        <div class="flex justify-between items-center px-4">
+          <p class="primary-txt text-xl md:text-2xl font-black">
+            Best Deal For you
+          </p>
+          <button
+            id="sort-price"
+            class="btn btn-success text-lg md:text-xl text-white bg-[#0E7A81]"
+          >
+            Sort by Price
+          </button>
+        </div>
+
+        <!-- spinner -->
+        <div class="flex justify-center mt-10">
+          <span
+            id="spinner"
+            class="loading loading-ring loading-lg hidden"
+          ></span>
+        </div>
+        <!-- hero container -->
+        <div
+          class="flex flex-col justify-center lg:flex-row gap-4 px-5 lg:px-0"
+        >
+          <!-- pet details container -->
+          <div
+            id="all-pets"
+            class="lg:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto mt-10"
+          ></div>
+
+          <!-- start modal details -->
+          <dialog id="my_modal_5" class="modal sm:modal-middle">
+            <div class="modal-box" id="modalContent"></div>
+          </dialog>
+          <!-- end modal details -->
+
+          <!-- start No Information Available -->
+          <section>
+            <div
+              id="no-information"
+              class="hero bg-base-200 py-24 md:px-28 rounded-2xl hidden w-full mt-10"
+            >
+              <div class="hero-content text-center">
+                <div class="max-w-md flex flex-col items-center justify-center">
+                  <img src="./assets/images/error.webp" alt="image" />
+                  <h3 class="py-3 primary-txt inter font-bold text-3xl">
+                    No Information Available
+                  </h3>
+                  <p class="text-center secondary-txt px-3">
+                    It’s well known that when viewing a page, a reader tends to
+                    get distracted by its readable content rather than focusing
+                    on the layout. The text can divert attention, making it
+                    harder to appreciate the design or structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end No Information Available -->
+
+          <!-- clicked image -->
+          <div
+            id="selected-container"
+            class="lg:w-1/4 bg-transparent min-h-96 md:h-auto mt-10 p-2 shadow border rounded-xl"
+          >
+            <div
+              id="select-pets-container"
+              class="grid md:grid-cols-2 gap-3"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero section -->
+    </main>
+    <!-- end main section -->
+
+    <!-- start adopt modal -->
+
+    <dialog id="my_modal_2" class="modal">
+      <div class="modal-box flex flex-col items-center justify-center">
+        <img class="w-20" src="./assets/images/congrates.png" alt="image" />
+        <h2 class="font-bold text-3xl primary-txt">Congrates</h2>
+        <p class="font-medium text-lg text-center primary-txt py-3">
+          Adoption Process is Start For Your Pet
+        </p>
+        <p class="primary-txt text-7xl font-black" id="count-down">3</p>
+      </div>
+    </dialog>
+
+    <!-- end adopt modal -->
+
+    <!-- start footer -->
+    <footer
+      class="bg-[#131313] p-10 mt-10 flex flex-col md:flex-row justify-between"
+    >
+      <div
+        class="flex flex-col items-center md:items-start order-3 md:order-1 mt-10 md:mt-0"
+      >
+        <div class="flex items-center mb-2">
+          <svg
+            class="w-8 md:w-10"
+            xmlns="http://www.w3.org/2000/svg"
+            width="29"
+            height="24"
+            viewBox="0 0 29 24"
+            fill="none"
+          >
+            <path
+              d="M14.4772 24C12.3632 24 10.2513 23.4925 8.15337 22.4775H8.15137C7.13836 21.988 6.485 20.937 6.485 19.8041C6.485 15.5083 10.0695 12.0117 14.4772 12.0117C18.8848 12.0117 22.4693 15.5083 22.4693 19.8041C22.4693 20.937 21.816 21.988 20.803 22.4775C18.703 23.4945 16.5911 24 14.4772 24Z"
+              fill="#0E7A81"
+            />
+            <path
+              d="M7.41809 6.08556C6.91658 3.66194 7.47004 0.840702 9.49805 0.135393C11.0425 -0.406076 13.3083 0.622916 14.0456 4.19541C14.5471 6.61904 13.9936 9.44027 11.9656 10.1436C10.4072 10.687 8.15337 9.64207 7.41809 6.08556Z"
+              fill="#0E7A81"
+            />
+            <path
+              d="M17.1465 10.1436C15.1185 9.44027 14.5651 6.61904 15.0666 4.19541C15.8019 0.6369 18.0577 -0.408076 19.6141 0.135391C21.6421 0.838702 22.1956 3.66193 21.6941 6.08556C20.9588 9.64207 18.705 10.687 17.1465 10.1436Z"
+              fill="#0E7A81"
+            />
+            <path
+              d="M0.74263 11.6341C-0.392258 9.75996 -0.298351 7.2684 1.52586 6.26339C3.16226 5.36627 5.39807 6.23941 6.62087 8.25743C7.75575 10.1296 7.66185 12.6232 5.83763 13.6282C4.08136 14.5912 1.85954 13.4743 0.74263 11.6341Z"
+              fill="#0E7A81"
+            />
+            <path
+              d="M23.1167 13.6262C21.2925 12.6212 21.1986 10.1296 22.3335 8.25543C23.5563 6.23941 25.7901 5.36227 27.4285 6.26139C29.2527 7.2664 29.3466 9.75796 28.2117 11.6321C27.0948 13.4743 24.873 14.5912 23.1167 13.6262Z"
+              fill="#0E7A81"
+            />
+          </svg>
+          <span class="footer-txt text-xl md:text-2xl lg:text-3xl font-bold"
+            >Peddy</span
+          >
+        </div>
+
+        <address class="footer-txt text-center">
+          Location: av. Washington 165, NY CA 54003
+        </address>
+        <a class="footer-txt" href="tel:+31859644725"
+          >Phone: +31 85 964 47 25</a
+        >
+        <a class="footer-txt" href="mailto:info@yourdomain.com"
+          >Email: info@yourdomain.com</a
+        >
+        <p class="footer-txt">Openings hours: 9.00 AM - 5.00 PM</p>
+        <ul class="flex gap-4 items-center mt-3">
+          <li>
+            <a href="#">
+              <img class="w-7" src="./assets/images/facebook.svg" alt="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img class="w-7" src="./assets/images/twitter.svg" alt="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="w-7" src="./assets/images/youtube.svg" alt="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="w-7" src="./assets/images/instragram.svg" alt="icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="flex flex-col items-center md:items-start order-1 md:order-2">
+        <h6 class="text-lg font-bold inter footer-txt">Useful Links</h6>
+        <li><a href="#" class="link link-hover footer-txt">Home</a></li>
+        <li><a class="link link-hover footer-txt">About Us</a></li>
+        <li><a class="link link-hover footer-txt">Animals</a></li>
+        <li><a class="link link-hover footer-txt">Foundation</a></li>
+        <li><a class="link link-hover footer-txt">Contact</a></li>
+      </ul>
+      <form class="mt-10 md:mt-0 order-2 md:order-3">
+        <h6 class="text-lg font-bold footer-txt inter text-center">
+          Drop a Message
+        </h6>
+        <fieldset class="form-control mt-3 md:w-80">
+          <div class="flex flex-col">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="input inter input-bordered join-item w-full"
+            />
+
+            <button
+              class="btn btn-success text-xl text-white bg-[#0E7A81] mt-3"
+            >
+              Subscribe
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+    <!-- JavaScript -->
+    <script src="./assets/JavaScript/main.js"></script>
+  </body>
+</html>
